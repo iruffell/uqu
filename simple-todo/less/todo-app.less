@@ -1,0 +1,106 @@
+// color scheme used in part by:
+// http://colorschemedesigner.com/#2Q51Tw0w0w0w0
+
+body {
+	background: #CCC;
+	margin: 0px;
+	font-family: "Merriweather Sans", sans-serif;
+}
+
+header {
+	background: #222;
+	height: 60px;
+	color: #EEE;
+
+	#page-heading {
+		position: absolute;
+		top: 15px;
+		left: 10px;
+		font-size: 1.5em;
+	}
+	#user-auth-data {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		text-align: right;
+		#welcome {
+			padding-bottom: 5px;
+		}
+	}
+	#login-data {
+		position: absolute;
+		top: 16px;
+		right: 10px;
+			#login-header {
+				font-size: 0.8em;
+			}
+	}
+}
+
+button {
+	background: #00C90D;
+	border: #00C90D;
+	border-radius: 3px;
+}
+
+#main {
+	margin: 0 auto;
+	text-align: center;
+	background: #01939A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	p {
+		margin: 0;
+	}
+
+	#login-heading, #list-heading {
+		font-size: 2em;
+	}
+
+	#todos {
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+
+	input[type="text"] {
+		font-family: "Merriweather Sans", sans-serif;
+		font-size: 1em;
+		width: 200px;
+		height: 1.5em;
+	}
+
+	// hide the add and edit todo buttons
+	#add-todo, .edit-todo {
+		visibility: hidden;
+		height: 0px;
+		width: 0px;
+		position: absolute;
+	}
+
+	#add-todo-form {
+		padding-top: 10px;
+		padding-bottom: 15px;
+
+		#todo-content {
+			width: 230px;
+		}
+	}
+
+	#login-form {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	#login-message {
+		padding-top: 10px;
+		max-width: 250px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+footer {
+	background: #222;
+	height: 60px;
+}
