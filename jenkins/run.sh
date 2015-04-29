@@ -7,6 +7,6 @@ docker rm jenkins
 docker rmi -f jenkins
 docker build -t iruffell/jenkins .
 
-docker run -it -d --name jenkins -p 8080:8080 -v /Users/ruffelli/node/uqu/jenkins-data/:/var/jenkins_home -t iruffell/jenkins
+docker run -it -d --name=jenkins -p 8080:8080 -v /Users/ruffelli/jenkins-data:/var/jenkins_home -t iruffell/jenkins
 
 docker logs jenkins
